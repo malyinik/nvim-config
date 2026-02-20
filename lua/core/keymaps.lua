@@ -12,4 +12,3 @@ map('n', '<C-j>', '<C-w><C-j>', { desc = 'Focus lower window' })
 map('n', '<C-k>', '<C-w><C-k>', { desc = 'Focus upper window' })
 
 map('i', 'jj', '<Esc>')
-map('i', 'оо', '<Esc>')

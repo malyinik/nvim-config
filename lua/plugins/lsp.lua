@@ -63,7 +63,7 @@ return {
         },
       },
       virtual_text = { severity = { min = vim.diagnostic.severity.ERROR } },
-      float = { border = 'rounded', source = true },
+      float = { source = true },
       severity_sort = true,
     })
 

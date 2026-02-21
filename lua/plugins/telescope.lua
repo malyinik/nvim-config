@@ -18,8 +18,10 @@ return {
         layout_config = {
           width = 0.9,
           height = 0.9,
-          flip_columns = 120,
           prompt_position = 'top',
+          flex = {
+            flip_columns = 120,
+          },
         },
         sorting_strategy = 'ascending',
         file_ignore_patterns = {

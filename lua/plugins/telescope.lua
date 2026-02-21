@@ -44,7 +44,9 @@ return {
       },
       extensions = {
         ['ui-select'] = {
-          require('telescope.themes').get_dropdown(),
+          require('telescope.themes').get_dropdown({
+            layout_config = { width = 0.7 },
+          }),
         },
         undo = {
           side_by_side = true,

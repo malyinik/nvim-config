@@ -39,14 +39,20 @@ return {
       end
     end
 
-    -- Автоустановка парсера при открытии файла нового типа
+    -- Подсветка + автоустановка парсера при открытии файла
     vim.api.nvim_create_autocmd('FileType', {
       callback = function(args)
         local lang = vim.treesitter.language.get_lang(args.match)
-        if lang and not vim.tbl_contains(require('nvim-treesitter').get_installed(), lang) then
+        if not lang then
+          return
+        end
+
+        local installed = require('nvim-treesitter').get_installed()
+        if vim.tbl_contains(installed, lang) then
+          vim.treesitter.start(args.buf)
+        elseif vim.tbl_contains(require('nvim-treesitter').get_available(), lang) then
           require('nvim-treesitter').install(lang)
         end
-        pcall(vim.treesitter.start, args.buf)
       end,
     })
 

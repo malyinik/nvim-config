@@ -113,9 +113,9 @@ return {
 
     vim.keymap.set('n', '<leader>a', function()
       require('nvim-treesitter-textobjects.swap').swap_next('@parameter.inner')
-    end)
+    end, { desc = 'Swap parameter next' })
     vim.keymap.set('n', '<leader>A', function()
       require('nvim-treesitter-textobjects.swap').swap_previous('@parameter.inner')
-    end)
+    end, { desc = 'Swap parameter prev' })
   end,
 }

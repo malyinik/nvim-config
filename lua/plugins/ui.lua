@@ -16,8 +16,8 @@ return {
     dependencies = 'nvim-tree/nvim-web-devicons',
 
     opts = {
-      vim.keymap.set('n', '<leader>blp', ':BufferLinePick<CR>', { desc = '[B]uffer[l]ine [P]ick' }),
-      vim.keymap.set('n', '<leader>blc', ':BufferLinePickClose<CR>', { desc = '[B]uffer[l]ine [C]lose' }),
+      vim.keymap.set('n', '<leader>blp', ':BufferLinePick<CR>', { desc = 'Pick buffer' }),
+      vim.keymap.set('n', '<leader>blc', ':BufferLinePickClose<CR>', { desc = 'Close picked buffer' }),
     },
 
     config = function()

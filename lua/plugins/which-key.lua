@@ -9,6 +9,8 @@ return {
       { '<leader>s', group = 'Search' },
       { '<leader>t', group = 'Toggle' },
       { '<leader>bl', group = 'Bufferline' },
+      { '<leader>g', group = 'Git' },
+      { '<leader>w', group = 'Session' },
       { 'gr', group = 'LSP' },
       { ']', group = 'Next' },
       { '[', group = 'Prev' },

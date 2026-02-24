@@ -17,19 +17,20 @@ return {
 
   opts = {
     formatters_by_ft = {
-      lua = { 'stylua' },
-      c = { 'clang-format' },
-      cpp = { 'clang-format' },
-      python = { 'ruff_format' },
-      json = { 'jq' },
-      yaml = { 'yamlfmt' },
-      markdown = { 'prettier' },
       bash = { 'shfmt' },
-      sh = { 'shfmt' },
+      c = { 'clang-format' },
       cmake = { 'gersemi' },
-      typst = { 'typstyle' },
-      tex = { 'tex-fmt' },
+      cpp = { 'clang-format' },
+      json = { 'jq' },
+      lua = { 'stylua' },
+      markdown = { 'prettier' },
+      python = { 'ruff_format' },
+      rust = { 'rustfmt' },
+      sh = { 'shfmt' },
       sql = { 'pg_format', 'sleek' },
+      tex = { 'tex-fmt' },
+      typst = { 'typstyle' },
+      yaml = { 'yamlfmt' },
     },
 
     formatters = {

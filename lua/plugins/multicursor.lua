@@ -16,7 +16,7 @@ return {
       mc.matchAddCursor(-1)
     end, { desc = 'Add cursor on prev match' })
 
-    map({ 'n', 'x' }, '<C-q>', mc.toggleCursor, { desc = 'Add/remove cursor' })
+    map({ 'n', 'x' }, '<leader>m', mc.toggleCursor, { desc = 'Add/remove cursor' })
     map({ 'n', 'x' }, '<C-a>', mc.enableCursors, { desc = 'Activate cursors' })
     map({ 'n', 'x' }, '<C-leftmouse>', mc.handleMouse, { desc = 'Add cursor with click' })
 

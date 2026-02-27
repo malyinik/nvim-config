@@ -38,7 +38,7 @@ return {
         args = { '--style=file' },
       },
       ['typstyle'] = {
-        args = { '--column', '120', '--tab-width', '4' },
+        args = { '--column', '120', '--tab-width', '2' },
       },
       ['tex-fmt'] = function()
         local config = require('core.config')

@@ -4,7 +4,7 @@ if vim.g.neovide then
   vim.g.neovide_fullscreen = false
   vim.g.neovide_cursor_animation_length = 0.25
 
-  vim.o.guifont = 'JetBrainsMonoNL Nerd Font Mono:h14'
+  vim.o.guifont = 'JetBrainsMono Nerd Font Mono:h14'
 
   vim.keymap.set('n', '<A-CR>', function()
     vim.g.neovide_fullscreen = not vim.g.neovide_fullscreen

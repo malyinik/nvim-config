@@ -9,6 +9,9 @@ return {
     keymap = {
       preset = 'default',
       ['<A-space>'] = { 'show', 'show_documentation', 'hide_documentation' },
+      ['<C-н>'] = { 'accept', 'fallback' }, -- <C-y> на русской раскладке
+      ['<C-т>'] = { 'select_next', 'fallback' }, -- <C-n> на русской раскладке
+      ['<C-з>'] = { 'select_prev', 'fallback' }, -- <C-p> на русской раскладке
     },
 
     appearance = { nerd_font_variant = 'normal' },

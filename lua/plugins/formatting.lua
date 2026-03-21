@@ -34,6 +34,9 @@ return {
     },
 
     formatters = {
+      ['prettier'] = {
+        prepend_args = { '--ignore-path', '' },
+      },
       ['clang-format'] = {
         args = { '--style=file' },
       },

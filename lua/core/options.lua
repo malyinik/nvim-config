@@ -42,6 +42,8 @@ vim.o.undofile = true
 vim.o.updatetime = 400
 vim.o.timeoutlen = 500
 vim.o.confirm = true
+vim.o.spell = true
+vim.o.spelllang = 'en,ru'
 
 vim.schedule(function()
   vim.o.clipboard = 'unnamedplus'

@@ -16,3 +16,10 @@ autocmd('FileType', {
     vim.opt_local.formatoptions:remove({ 'c', 'o' })
   end,
 })
+
+autocmd('TermOpen', {
+  group = augroup('disable-spell-term', { clear = true }),
+  callback = function()
+    vim.opt_local.spell = false
+  end,
+})
